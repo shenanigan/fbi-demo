@@ -41,7 +41,7 @@ namespace FBI.Controllers
         [HttpPost]
         [Route("[action]")]
         [Authorize(Policy = "Admin")]
-        public IActionResult EnrolAgent([FromBody] Agent Agent)
+        public IActionResult GenerateBadge([FromBody] Agent Agent)
         {
             var Claims = new List<Claim>
             {
